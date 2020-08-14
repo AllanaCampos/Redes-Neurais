@@ -1,0 +1,8 @@
+SL		SW		Bias
+-63.20199	112.804955	2.0
+validation accuracy: 0.9333333
+trainning accuracy: 0.99995834
+fold accuracy: 
+1.0	0.9166667	1.0	0.8333333	0.9166667	
+validation error: 
+0.0	1.0	0.0	2.0	1.0	
