@@ -1,4 +1,4 @@
-# Comparação entre Adaline e Perceptron utilziando banco de dados IRIS
+# Comparação entre Adaline e Perceptron utilizando banco de dados IRIS
 Este repositório contém os códigos implementados a partir de pseudocódigos encontrados no livro “Redes Neurais Artificiais Para Engenharias e Ciências Aplicadas”, tais códigos foram implementados com intuito didático para introdução as redes neurais, onde foi feito uma comparação entre as redes neurais Adaline e Perceptron utilizando o banco de dados IRIS. As redes neurais foram implementadas com o treinamento e classificação separadamente. Os códigos encontram-se nas pastas com os nomes das redes neurais.
 # Treinamento
 Para o treinamento das redes neurais, foram utilizados os arquivos na pasta ``` Dados-treinamento ```, cada treinamento utiliza apenas um arquivo de entrada e apresenta 6 arquivos de saída. Para que não haja erros no treinamento deve-se alterar o seguinte trecho de código de acordo com o arquivo de entrada:
