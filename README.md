@@ -22,4 +22,15 @@ Os gráficos na pasta ```Gráficos/Planos``` apresentam os resultados da classif
 P1*x+P2*y+BIAS=0
 ```
 Onde ```P1``` e ```P2``` são os pesos obtidos no resultado do treinamento.
+Para a geração do gráfico deve-se colocar em ```arquivo = open('csetvirg30.txt', 'r')``` o nome do arquivo da pasta ```Dados-classificação``` que corresponde ao mesmo conjunto de dados indicado em ```reta = open('dados-plano-PL-PW-setvirg30.txt', 'r')```; por exemplo para os arquivos ```dados-plano-SL-SW-setvirg30.txt``` e ```dados-plano-PL-PW-setvirg30.txt``` utiliza-se ```csetvirg30.txt```.
+No seguinte trecho de código os valores ```vy``` e ``` vx```, que representam a posição de um ponto (x,y) e auxiliam no calculo do segundo ponto (x2,y2) da reta, devem ser alterados para cada gráfico para que a reta não fique muito grande, de modo que os pontos não sejam bem vizualizados nem fique muito curta de modo que não corte o plano que apresenta os pontos.
+```
+vy = 4.5
+vx = 1
+xret.append(((-vy*float(c[1].split('\t')[1])-float(c[1].split('\t')[2]))/float(c[1].split('\t')[0])))
+xret.append(vx)
+yret.append(vy)
+yret.append((-vx*float(c[1].split('\t')[0])-float(c[1].split('\t')[2]))/float(c[1].split('\t')[1]))
+```
+
 O gráfico na pasta ```Gráficos/Gráfico4X4``` apresenta os valores das amostras utilizadas para treinamento e classificação no plano, onde cada característica é combinada com as outras em cada linha para uma visualização no plano dos dados.
