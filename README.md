@@ -1,5 +1,11 @@
 # Comparação entre Adaline e Perceptron utilizando conjunto de dados IRIS
 Este repositório contém os códigos implementados a partir de pseudocódigos encontrados no livro de Danilo G. Spatti, Ivan N. da Silva e Rogério A. Flauzino, “Redes Neurais Artificiais Para Engenharias e Ciências Aplicadas”, tais códigos foram implementados com intuito didático para introdução as redes neurais, onde foi feito uma comparação entre as redes neurais Adaline e Perceptron utilizando o conjunto de dados IRIS. As redes neurais foram implementadas com o treinamento e classificação separadamente. Os códigos encontram-se nas pastas com os nomes das redes neurais.
+#Dados
+Os dados utilizados para treinamento e classificação foram gerados a partir do conjunto de dados IRIS e utilizando o programa ```geradados.pde``` encontrado na pasta ``` Gera-dados```. Como entrada do programa foram utilizados os arquivos ```setvers.txt```, ```setvirg.txt``` e ```virgvers.txt``` que contém 100 linhas cada e se encontram na mesma pasta. Para geração dos arquivos de treinamento e de classificação encontrados nas pastas ```Dados-treinamento``` e ``` Dados-classificação ``` é preciso alterar a linha a seguir, além do nome do arquivo de entrada que se deseja obter os dados.
+```
+for (int i = 1; i<30; i++){
+```
+Onde o valor ```30``` deve ser alterado para a quantidade de amostras desejadas em cada arquivo de treinamento, por exemplo para a geração dos arquivos ```virgvers30.txt``` e ```cvirgvers30.txt``` utilizou-se o valor ```60``` pois era desejado 30 amostras de Iris-versicolor e 30 de Iris-virgínica.
 # Treinamento
 Para o treinamento das redes neurais, foram utilizados os arquivos na pasta ``` Dados-treinamento ```, cada treinamento utiliza apenas um arquivo de entrada e apresenta 6 arquivos de saída. Para que não haja erros no treinamento deve-se alterar o seguinte trecho de código de acordo com o arquivo de entrada:
 ```
