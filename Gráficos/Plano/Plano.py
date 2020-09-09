@@ -12,10 +12,12 @@ x=[]
 y=[]
 x2 = []
 y2 = []
-xret.append(((-4.5*float(c[1].split('\t')[1])-float(c[1].split('\t')[2]))/float(c[1].split('\t')[0])))
-xret.append(1)
-yret.append(4.5)
-yret.append((-1*float(c[1].split('\t')[0])-float(c[1].split('\t')[2]))/float(c[1].split('\t')[1]))
+vy = 4.5
+vx = 1
+xret.append(((-vy*float(c[1].split('\t')[1])-float(c[1].split('\t')[2]))/float(c[1].split('\t')[0])))
+xret.append(vx)
+yret.append(vy)
+yret.append((-vx*float(c[1].split('\t')[0])-float(c[1].split('\t')[2]))/float(c[1].split('\t')[1]))
 
 for i in range(int(aux)+1):
     spl = a[i].split(',')
